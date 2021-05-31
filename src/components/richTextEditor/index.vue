@@ -3,6 +3,7 @@
   import Quill from 'quill'
   import 'quill/dist/quill.snow.css'
   export default defineComponent({
+    name:'richTextEditor',
     props: {
       modelValue: String
     },
