@@ -1,6 +1,6 @@
 {
   "name": "vue3-quill-editor",
-  "version": "0.0.1-0",  
+  "version": "0.0.2-0",
   "main": "./lib/vue3-quill-editor.umd.js",
   "module": "./lib/vue3-quill-editor.es.js",
   "scripts": {
@@ -21,7 +21,10 @@
     "vue-tsc": "^0.0.24"
   },
   "description": "This template should help get you started developing with Vue 3 and Typescript in Vite.",
-  "files": ["dist","src/components"],
+  "files": [
+    "dist",
+    "src/components"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/7uvss/vue3-quill.git"
