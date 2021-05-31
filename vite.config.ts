@@ -8,7 +8,7 @@ export default defineConfig({
     outDir: 'lib',
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'element-pro'
+      name: 'vue3-quill-editor'
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
