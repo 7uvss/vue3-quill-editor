@@ -1,13 +1,12 @@
 {
   "name": "vue3-quill-editor",
   "version": "0.0.7-0",
-  "main": "./lib/vue3-quill-editor.umd.js",
+  "main": "./src/index.ts",
   "module": "./lib/vue3-quill-editor.es.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "lib": "vite build --target lib --name vue3-quill-editor --dest lib src/index.ts"
+    "serve": "vite preview"
   },
   "dependencies": {
     "quill": "^1.3.6",
@@ -22,16 +21,17 @@
   },
   "description": "This template should help get you started developing with Vue 3 and Typescript in Vite.",
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/7uvss/vue3-quill.git"
+    "url": "git+https://github.com/7uvss/vue3-quill-editor.git"
   },
   "author": "7uvss",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/7uvss/vue3-quill/issues"
+    "url": "https://github.com/7uvss/vue3-quill-editor/issues"
   },
-  "homepage": "https://github.com/7uvss/vue3-quill#readme"
+  "homepage": "https://github.com/7uvss/vue3-quill-editor#readme"
 }
