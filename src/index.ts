@@ -1,15 +1,9 @@
-import type { App } from "vue";
-import richTextEditor from "./components/richTextEditor/index";
+import richTextEditor from "./components/richTextEditor.vue";
 
-const components = {
-  richTextEditor,
-};
+richTextEditor.install = function(app) {
+  app.component(richTextEditor.name, richTextEditor)
+}
 
-const install = (app: App): void => {
-  for (const key in components) {
-    const item = components[key];
-    app.component(item.name || key, item);
-  }
-};
+const VueQuillEditor = { richTextEditor }
 
-export default { install };
+export default { VueQuillEditor };
