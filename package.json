@@ -1,8 +1,8 @@
 {
   "name": "vue3-quill-editor",
   "version": "0.0.16-0",
-  "main": "./lib/vue3-quill-editor.es.umd.js",
-  "module": "./lib/vue3-quill-editor.es.es.js",
+  "main": "./lib/vue3-quill-editor.umd.js",
+  "module": "./lib/vue3-quill-editor.es.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
