@@ -8,4 +8,3 @@ richTextEditor.install = function (app) {
 const VueQuillEditor = { Quill, richTextEditor };
 
 export default VueQuillEditor;
-export { Quill, VueQuillEditor };
