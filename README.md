@@ -1,12 +1,12 @@
-# Vue 3 Quill RichTextEditor
+# Vue 3 Quill Rich Text Editor
 
-## Usage
-
-Install:
+## Install
 
 ```javascript
 npm i vue3-quill-editor
 ```
+
+## Usage
 
 Global Registration:
 
@@ -18,7 +18,7 @@ import "vue3-quill-editor/lib/style.css";
 app.use(Quill);
 ```
 
-In .vue
+In .vue:
 
 ```html
 <template>
