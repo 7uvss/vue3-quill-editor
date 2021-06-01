@@ -1,6 +1,6 @@
 {
   "name": "vue3-quill-editor",
-  "version": "0.0.14-0",
+  "version": "0.0.15-0",
   "main": "./lib/vue3-quill-editor.es.umd.js",
   "module": "./lib/vue3-quill-editor.es.es.js",
   "scripts": {
