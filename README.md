@@ -1,5 +1,5 @@
 # Vue 3 Quill Rich Text Editor
-
+Quill for Vue3
 ## Install
 
 ```javascript
