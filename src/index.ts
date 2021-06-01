@@ -1,3 +1,4 @@
+import type { App } from 'vue'
 import richTextEditor from "./components/richTextEditor/index";
 
 const components = {
@@ -12,3 +13,5 @@ const install = (app: App): void => {
 };
 
 export default { install };
+
+export { richTextEditor }
