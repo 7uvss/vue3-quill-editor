@@ -3,21 +3,22 @@
   import Quill from 'quill'
   import 'quill/dist/quill.core.css'
   import 'quill/dist/quill.snow.css'
-  import 'quill/dist/quill.bubble.css'
+
   export default defineComponent({
     name: 'richTextEditor',
     props: {
-      modelValue: String
+      modelValue: String,
+      toolBarConfig: Array
     },
     emits: ['update:modelValue'],
     setup: (props, { emit }) => {
-      const { modelValue } = toRefs(props)
+      const { modelValue,toolBarConfig } = toRefs(props)
       const editor = ref()
       const editorRef = ref()
       onMounted(() => {
         editor.value = new Quill(editorRef.value, {
           modules: {
-            toolbar: [[{ header: [1, 2, 3, false] }], [{ color: [] }, { background: [] }], ['bold', 'italic', 'underline', 'strike'], [{ align: [] }], ['clean']]
+            toolbar: toolBarConfig?.value
           },
           theme: 'snow'
         })
