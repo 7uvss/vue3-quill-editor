@@ -1,9 +1,11 @@
 <script lang="ts">
   import { defineComponent, onMounted, ref, toRefs, h } from 'vue'
   import Quill from 'quill'
+  import 'quill/dist/quill.core.css'
   import 'quill/dist/quill.snow.css'
+  import 'quill/dist/quill.bubble.css'
   export default defineComponent({
-    name:'richTextEditor',
+    name: 'richTextEditor',
     props: {
       modelValue: String
     },
@@ -29,4 +31,4 @@
       }
     }
   })
-  </script>
+</script>
