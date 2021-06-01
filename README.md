@@ -22,11 +22,12 @@ In .vue:
 
 ```html
 <template>
-  <richTextEditor v-model="rawHTML"></richTextEditor>
+  <richTextEditor :toolBarConfig="toolBarConfig" v-model="rawHTML"></richTextEditor>
 </template>
 
 <script setup lang="ts">
   import { ref } from "vue";
+  const toolBarConfig = [[{ header: [1, 2, 3, false] }], [{ color: [] }, { background: [] }], ['bold', 'italic', 'underline', 'strike'], [{ align: [] }], ['clean']]
   const rawHTML = ref("");
 </script>
 ```
