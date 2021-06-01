@@ -1,8 +1,11 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import path from 'path'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base:'/vue3-quill-editor/'
-})
+  base: "/vue3-quill-editor/",
+  build: {
+    outDir: "./docs",
+  },
+});
